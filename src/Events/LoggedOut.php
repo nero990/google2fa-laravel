@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel\Events;
+namespace Nero990\Google2FALaravel\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;

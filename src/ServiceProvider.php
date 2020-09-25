@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel;
+namespace Nero990\Google2FALaravel;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
@@ -34,7 +34,7 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('pragmarx.google2fa', function ($app) {
+        $this->app->singleton('nero990.google2fa', function ($app) {
             return $app->make(Google2FA::class);
         });
     }

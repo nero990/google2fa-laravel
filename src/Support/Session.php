@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel\Support;
+namespace Nero990\Google2FALaravel\Support;
 
 trait Session
 {
@@ -36,6 +36,10 @@ trait Session
             return $default;
         }
 
+        if (!empty($this->cacheKey)) {
+            return cache()->get($this->makeSessionVarName($this->cacheKey . ":" . $var), $default);
+        }
+
         return $this->getRequest()->session()->get(
             $this->makeSessionVarName($var),
             $default
@@ -54,6 +58,10 @@ trait Session
     {
         if ($this->stateless) {
             return $value;
+        }
+
+        if (!empty($this->cacheKey)) {
+            return cache()->put($this->makeSessionVarName($this->cacheKey . ":" . $var), $value);
         }
 
         $this->getRequest()->session()->put(

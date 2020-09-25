@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel\Support;
+namespace Nero990\Google2FALaravel\Support;
 
 trait Auth
 {

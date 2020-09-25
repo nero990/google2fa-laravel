@@ -1,13 +1,13 @@
 {
-    "name": "pragmarx/google2fa-laravel",
+    "name": "nero990/google2fa-laravel",
     "description": "A One Time Password Authentication package, compatible with Google Authenticator.",
     "keywords": ["authentication", "two factor authentication", "google2fa", "laravel"],
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Antonio Carlos Ribeiro",
-            "email": "acr@antoniocarlosribeiro.com",
-            "role": "Creator & Designer"
+            "name": "Oghenero Okiewhru",
+            "email": "oghenero.okiewhru@gmail.com",
+            "homepage": "https://github.com/nero990/google2fa-laravel"
         }
     ],
     "require": {
@@ -21,8 +21,8 @@
     },
     "autoload": {
         "psr-4": {
-            "PragmaRX\\Google2FALaravel\\": "src/",
-            "PragmaRX\\Google2FALaravel\\Tests\\": "tests/"
+            "Nero990\\Google2FALaravel\\": "src/",
+            "Nero990\\Google2FALaravel\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -33,10 +33,10 @@
         },
         "laravel": {
             "providers": [
-                "PragmaRX\\Google2FALaravel\\ServiceProvider"
+                "Nero990\\Google2FALaravel\\ServiceProvider"
             ],
             "aliases": {
-                "Google2FA": "PragmaRX\\Google2FALaravel\\Facade"
+                "Google2FA": "Nero990\\Google2FALaravel\\Facade"
             }
         }
     },

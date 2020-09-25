@@ -1,13 +1,13 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel\Support;
+namespace Nero990\Google2FALaravel\Support;
 
 use Illuminate\Http\Request as IlluminateRequest;
-use PragmaRX\Google2FALaravel\Events\EmptyOneTimePasswordReceived;
-use PragmaRX\Google2FALaravel\Events\LoginFailed;
-use PragmaRX\Google2FALaravel\Events\LoginSucceeded;
-use PragmaRX\Google2FALaravel\Exceptions\InvalidOneTimePassword;
-use PragmaRX\Google2FALaravel\Google2FA;
+use Nero990\Google2FALaravel\Events\EmptyOneTimePasswordReceived;
+use Nero990\Google2FALaravel\Events\LoginFailed;
+use Nero990\Google2FALaravel\Events\LoginSucceeded;
+use Nero990\Google2FALaravel\Exceptions\InvalidOneTimePassword;
+use Nero990\Google2FALaravel\Google2FA;
 
 class Authenticator extends Google2FA
 {
@@ -58,6 +58,22 @@ class Authenticator extends Google2FA
         $this->boot($request);
 
         $this->setStateless();
+
+        return $this;
+    }
+
+    /**
+     * Authenticator boot for API using cache
+     *
+     * @param $request
+     * @param string $cacheKey
+     * @return Google2FA
+     */
+    public function bootCache($request, string $cacheKey): Google2FA
+    {
+        $this->boot($request);
+
+        $this->cacheKey = $cacheKey;
 
         return $this;
     }
