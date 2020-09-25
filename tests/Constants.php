@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel\Tests;
+namespace Nero990\Google2FALaravel\Tests;
 
 class Constants
 {

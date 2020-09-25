@@ -1,14 +1,14 @@
 <?php
 
-namespace PragmaRX\Google2FALaravel\Tests;
+namespace Nero990\Google2FALaravel\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use PragmaRX\Google2FALaravel\Facade as Google2FA;
-use PragmaRX\Google2FALaravel\Support\Authenticator;
-use PragmaRX\Google2FALaravel\Support\Constants as PackageConstants;
-use PragmaRX\Google2FALaravel\Tests\Support\User;
+use Nero990\Google2FALaravel\Facade as Google2FA;
+use Nero990\Google2FALaravel\Support\Authenticator;
+use Nero990\Google2FALaravel\Support\Constants as PackageConstants;
+use Nero990\Google2FALaravel\Tests\Support\User;
 
 class Google2FaLaravelTest extends TestCase
 {
