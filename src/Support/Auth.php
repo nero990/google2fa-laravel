@@ -12,7 +12,7 @@ trait Auth
     protected $auth;
 
     /**
-     * Get or make an auth instance.
+     * Get or make an auth instance. 
      *
      * @return \Illuminate\Foundation\Application|mixed
      */
