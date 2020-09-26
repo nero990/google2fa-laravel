@@ -12,7 +12,7 @@ use Nero990\Google2FALaravel\Support\Config;
 use Nero990\Google2FALaravel\Support\Constants;
 use Nero990\Google2FALaravel\Support\Request;
 use Nero990\Google2FALaravel\Support\Session;
-use Nero990\Google2FAQRCode\Google2FA as Google2FAService;
+use PragmaRX\Google2FAQRCode\Google2FA as Google2FAService;
 
 class Google2FA extends Google2FAService
 {
